@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding-top: 20vh;
+    height: 900px;
+    background: linear-gradient(to top, #008F8C, #0CABA8, #0FC2C0);
+}
+#login{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+input{
+    display: inline;
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 250px;
+    height: 25px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    background: #9AC447
+}
+#usuarios{
+    display: block;
+}
+#password{
+    background-color: #8CC242;
+}
+#input{
+    margin: auto;
+}
+#opcoes{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: -50px;
+    color: white;
+    cursor: pointer;
+}
+#principal{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+#entrar{
+    padding: 10px;
+    border-top: 0px ;
+    border-right: 1px solid white;
+    cursor: pointer;
+}
+#cadastro{
+    padding: 10px;
+    border-top: 0px ;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+
+.cadastrar{
+    display: none;
+    margin: auto;
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.informacao{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #7DBF3B;
+    border: none;
+}
+
+.loader{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    border: 10px solid #000000;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: rotacao 1s linear forwards;
+}
+
+@keyframes rotacao{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#recuperar{
+    display: none;
+    margin: auto;
+    margin-top: 80px;
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+.informacao{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #7DBF3B;
+    border: none;
+}
