@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar-Snake Game</title>
+    <link rel="stylesheet" href="loginkstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="opcoes">
+        <p id="entrar" onclick="entrar()">Entrar</p>
+        <p id="cadastro" onclick="cadastrar()">Cadastre-se</p>
+    </div>
+    <div id="login">
+        <div id="input">
+            <div id="imagem">
+                <img src="cobrajpg.png" alt="Cobra-desenho" style="width: 200px; height: 150px; margin-left: 50px;">
+            </div>
+            <p id="principal">Entrar:</p>
+            <div class="usuarios">
+                <span class="material-symbols-outlined" style="color: white;">person</span><input type="text" placeholder="Usuario" id="email-user">
+            </div>
+            <div class="usuarios">
+                <span class="material-symbols-outlined" style="color: white;">
+                    password
+                    </span><input type="password" name="password" id="password" placeholder="Senha">
+                
+                <div>
+                    <button onclick="recuperars()">Recuperar Senha</button>
+                </div>
+                
+                <button onclick="login()">Entrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="cadastrar">
+        <div>
+            <h1>Cadastre-se</h1>
+
+            <input type="text" name="" class="informacao" placeholder="Nome de Usuario:" id="usuario">
+
+            <input type="password" name="" class="informacao" placeholder="Senha:" id="senha">
+
+            <input type="email" name="" class="informacao" placeholder="E-Mail:" id="email">
+
+            <button onclick="enviar()">Cadastrar-se</button>
+        </div>   
+    </div>
+    <div id="recuperar">
+        <div>
+            <h1>Recuperar senha:</h1>
+            <input type="email" name="" class="informacao" placeholder="E-Mail:" id="email-recuperar">
+            <button onclick="checar()">Enviar</button>
+</body>
+
+<div class="loader"></div>
+
+
+</html>
+<script src="loginjs.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+<script>
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyDsSAYdtkJdUlYy4vv73SRyRA1beSDPiXY",
+    authDomain: "snake-game-26693.firebaseapp.com",
+    projectId: "snake-game-26693",
+    storageBucket: "snake-game-26693.appspot.com",
+    messagingSenderId: "899902205926",
+    appId: "1:899902205926:web:01c05488f684c80246b027"
+  };
+  firebase.initializeApp(firebaseConfig)
+
+</script>

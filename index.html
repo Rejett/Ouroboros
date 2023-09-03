@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div id="login">
+            <button onclick="sairH()" id="sairH" class="opcoesCadas">Sair</button>
+        </div>
+    </header>
+    <div class="score">Pontos <span class="score-value">00</span><span>Melhor puntação:</span><span  id="bestscore">00</span></div>
+    <div>
+        <span class="material-symbols-outlined" id="pause">
+            pause
+        </span>
+        <span class="material-symbols-outlined" id="start">
+            play_arrow
+        </span>
+    </div>
+    <div class="pause">
+        <span class="game-over">Pausado!</span>
+    </div>
+    <div class="menu-screen">
+        <span class="game-over">Game Over</span>
+        <span class="final-score">Pontos <span>00</span></span>
+        <button class="btn-play">
+            <span class="material-symbols-outlined">
+            play_circle
+            </span>Jogar Novamente</button>
+    </div>
+        <canvas width="540" height="540"></canvas>
+    <br>
+    <span class="maiores" onclick="up()">↑</span> 
+    <div class="diferentes"> 
+        <span class="setas" onclick="left()">←</span>
+        <span class="maiores" onclick="down()">↓</span> 
+        <span class="setas" onclick="right()">→</span>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
+<script src="loginjs.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+<script>
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyDsSAYdtkJdUlYy4vv73SRyRA1beSDPiXY",
+    authDomain: "snake-game-26693.firebaseapp.com",
+    projectId: "snake-game-26693",
+    storageBucket: "snake-game-26693.appspot.com",
+    messagingSenderId: "899902205926",
+    appId: "1:899902205926:web:01c05488f684c80246b027"
+  };
+  firebase.initializeApp(firebaseConfig)
+
+</script>
