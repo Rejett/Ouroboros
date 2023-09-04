@@ -15,7 +15,6 @@ function showLoading() {
 
     setTimeout(() => hideLoading(), 2000)
 }
-
 function hideLoading(){
     loader.style.display = "none"
 }
@@ -54,7 +53,6 @@ function enviar(){
         alert(getErrorMessage(error))
     })
 }
-
 function login(){
     showLoading()
     firebase.auth().signInWithEmailAndPassword(

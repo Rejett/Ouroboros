@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <header>
+    <h1 id="titulo">OuroBoros</h1>
+    </header>
     <div id="opcoes">
         <p id="entrar" onclick="entrar()">Entrar</p>
         <p id="cadastro" onclick="cadastrar()">Cadastre-se</p>
@@ -61,7 +64,7 @@
 </html>
 <script src="loginjs.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>>
 <script>
 
     const firebaseConfig = {
@@ -75,3 +78,5 @@
   firebase.initializeApp(firebaseConfig)
 
 </script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+

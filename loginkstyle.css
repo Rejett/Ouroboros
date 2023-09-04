@@ -1,11 +1,22 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Great+Vibes&family=Indie+Flower&family=Lilita+One&family=Rubik+Iso&family=Sacramento&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
+header{
+    margin-top: -200px;
+    margin-bottom: 90px;
+    font-size: 3rem;
+    font-family: 'Rubik Iso', cursive;
+}
+#titulo{
+    color: #042940;
+}
 body{
     padding-top: 20vh;
-    height: 900px;
-    background: linear-gradient(to top, #008F8C, #0CABA8, #0FC2C0);
+    height: 736px;
+    background: linear-gradient(to bottom, #9FC131, #005C53);
 }
 #login{
     display: flex;
@@ -13,9 +24,10 @@ body{
     margin-top: 80px;
     width: 500px;
     height: 500px;
-    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    background: linear-gradient(to top, #042940, #005C53);;
     border-radius: 10px;
     backface-visibility: hidden;
+    box-shadow: 5px 5px 3px 3px rgba(105, 105, 105, 0.281);
 }
 input{
     display: inline;
@@ -27,26 +39,31 @@ input{
     border-left: 0px;
     border-right: 0px;
     border-bottom: 2px solid white;
-    background: #9AC447
+    background: #042940;
+}
+input::placeholder{
+    color: white;
 }
 #usuarios{
     display: block;
 }
 #password{
-    background-color: #8CC242;
+    background-color: #042940;
 }
 #input{
     margin: auto;
 }
 #opcoes{
+    font-family: 'Rubik Iso', cursive;
     display: flex;
     justify-content: center;
     font-size: 2rem;
     margin-top: -50px;
-    color: white;
+    color: #042940;
     cursor: pointer;
 }
 #principal{
+    font-family: 'Rubik Iso', cursive;
     margin-top: 50px;
     text-align: center;
     font-size: 2rem;
@@ -55,13 +72,13 @@ input{
 #entrar{
     padding: 10px;
     border-top: 0px ;
-    border-right: 1px solid white;
+    border-right: 1px solid #042940;
     cursor: pointer;
 }
 #cadastro{
     padding: 10px;
     border-top: 0px ;
-    border-left: 1px solid white;
+    border-left: 1px solid #042940;
     cursor: pointer;
 }
 
@@ -71,7 +88,7 @@ input{
     margin-top: 80px;
     width: 500px;
     height: 500px;
-    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    background: linear-gradient(to top, #042940, #005C53);;
     border-radius: 10px;
     backface-visibility: hidden;
 }
@@ -80,6 +97,7 @@ h1{
     text-align: center;
     color: white;
     cursor: pointer;
+    font-family: 'Rubik Iso', cursive;
 }
 .informacao{
     display: block;
@@ -97,6 +115,7 @@ button{
     color: white;
     background-color: #7DBF3B;
     border: none;
+    font-family: 'Rubik Iso', cursive;
 }
 
 .loader{
@@ -127,7 +146,7 @@ button{
     margin-top: 80px;
     width: 500px;
     height: 300px;
-    background: linear-gradient(to top, #7DBF3B, #D9D162);;
+    background: linear-gradient(to top, #042940, #005C53);;
     border-radius: 10px;
     backface-visibility: hidden;
 }
@@ -150,6 +169,6 @@ button{
     height: 30px;
     font-size: 1rem;
     color: white;
-    background-color: #7DBF3B;
+    background-color: #042940;;
     border: none;
 }
