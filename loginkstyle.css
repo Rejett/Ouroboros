@@ -15,7 +15,7 @@ header{
 }
 body{
     padding-top: 20vh;
-    height: 736px;
+    height: 900px;
     background: linear-gradient(to bottom, #9FC131, #005C53);
 }
 #login{
